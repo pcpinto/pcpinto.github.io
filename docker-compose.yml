@@ -1,0 +1,18 @@
+version: "3.7"
+
+services:
+  site:
+    container_name: "site"
+    hostname: "site"
+    image: "jekyll/jekyll:pages"
+    command: "jekyll serve --watch --incremental"
+    restart: "always"
+    ports:
+        - "8000:4000"
+    volumes:
+        - ".:/srv/jekyll"
+    networks:
+      - net
+
+networks:
+  net:

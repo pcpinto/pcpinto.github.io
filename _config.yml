@@ -1,0 +1,64 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your entire site, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# `jekyll serve`. If you change this file, please restart the server process.
+
+
+# Theme Settings
+remote_theme: "mmistakes/minimal-mistakes@4.13.0"
+minimal_mistakes_skin: "default"
+
+# Site Settings
+locale: "en-US"
+title: " "
+title_separator: "|"
+name: "Pedro Pinto"
+description: "Pedro C. Pinto -- Lytmus, EPFL, MIT"
+url: "http://pedropinto.org"
+repository: "pcpinto/pcpinto.github.io"
+breadcrumbs: false
+search: false
+
+# Social Profile
+social:
+  type: "Person"
+  name: "Pedro C. Pinto"
+  links:
+      - "https://www.linkedin.com/in/pedrocpinto"
+      - "https://www.facebook.com/pedrocpinto"
+
+# Site Author
+author:
+  name: "Pedro Pinto"
+  avatar: "/assets/images/pedro_pinto.jpg"
+  bio: " "
+  location: "San Francisco, CA"
+  email: "ppinto@alum.mit.edu"
+  links:
+    - label: "Google Scholar"
+      icon: "fas fa-fw fa-link"
+      url: "https://scholar.google.com/citations?user=TASktgIAAAAJ"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin-in"
+      url: "https://www.linkedin.com/in/pedrocpinto"
+
+# Reading Files
+include:
+  - "_pages"
+
+# Defaults
+defaults:
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      author_profile: true
+      layout: single
+      read_time: false
+      comments: false
+      share: false
+      related: false
+
